@@ -1,0 +1,60 @@
+body{
+    margin: 20px;
+    font-family: verdana;
+}/* selector tipo etiqueta con una margen para todos los lados de 20px y una fuente verdana*/
+
+#menu-principal{
+    padding-bottom: 10px;
+    padding-left: 0px;
+}/* selector id de menu-principal con un relleno inferior de 10px y un relleno izquierdo de 0 px*/
+
+a{
+    color: green;
+    text-decoration: none;
+}/* seleector de etiqueta para enlaces con un color verde con y sin el subrrayado*/
+
+#menu-principal:hover{
+    text-decoration: underline;
+}/* selector id de menu-principal con la peseudoclass hover el cual se activa al pasar el  mause sobre el enlace el efecto subrrayado*/
+
+::before
+#menu-principal a + a::before{
+     content: "  | " ;
+     color: black;
+}/* peseudo elemento ::before que se usa para insertar cualquier cosa o aplica estilos despues del contenido de la etiqueta dentro del selecto id a + a selector adyacente o avansado  con el | a + a con un color : balck*/
+
+footer{
+    margin-top: 20px;
+    border-top: solid 1px black;
+    padding-top: 10px;
+    text-align: center;
+} /* selector de etiqueta footter de pie de pagina con un margen superior de 20px, borde superior solido 1px negro , relleno superior de 10px y texto centrado*/
+
+table{
+    border-collapse: collapse;
+}/* selecto de etiqueta para la tabla con la propiedad border-collapse : collpase*/
+
+table,th,td{
+    border: solid 1px black;
+    padding: 10px;
+}/* selector tipo etiqueta table, th,td con un borde solido de 1px negro y un relleno de 10px*/
+
+tbody tr:nth-child(even){
+    background: #CCC;
+}/* selector tipo etiqueta tbody para la etiqueta tr de la tabla con un pesueduoclass nth-child even para numeros pares con un background : #CCC;*/
+
+tbody tr:nth-child(odd){
+    background: #CCF;
+}/* selector tipo etiqueta tbody  para la etiqueta tr de la tabla con peseudo class nth-child para odd para numeros impares con un background : #CCF */
+
+tbody tr:nth-child(even):hover{
+    background: #DDD;
+}/* selector tipo etiqueta con un tbody para la etiqueta tr de la tabla con pesudoclass nth-child even para numeros pares con un hover que la pasar el mause cambia el color por el del background : #DDD*/
+
+tbody tr:nth-child(odd):hover{
+    background: #DDF;
+}/* selector tipo etiqueta con un tbody para la etiqueta tr de la tabla con un peseudoclass nth-child odd para numeros impares con hover que al pasar el mause cambia el color por el del background : DDF*/
+
+.sombra{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}/* selector tipo class con una sombra de 2px 2px 6px con un color rgba negro */
